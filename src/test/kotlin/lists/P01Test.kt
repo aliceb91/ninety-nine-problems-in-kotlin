@@ -26,4 +26,12 @@ class P01Test {
         assertEquals(expected1, result1)
         assertEquals(expected2, result2)
     }
+
+    @Test
+    fun `it handles the example data`() {
+        val underTest = P01()
+        val expected: Int = 8
+        val result: Int = underTest.lastElement(listOf(1, 1, 2, 3, 5, 8))
+        assertEquals(expected, result)
+    }
 }
